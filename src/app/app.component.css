@@ -52,6 +52,8 @@
   background-color: #f7f7f7;
   border-radius: 5px;
   padding: 25px 15px 0;
+  position: sticky;
+  top: 85px; /* Cố định khoảng cách từ trên xuống */
 }
 .menuLeft a{
   display: flex;
@@ -85,7 +87,6 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   font-size: 25px;
-  margin-top: 40px;
 }
 .center a{
   display: flex;
@@ -139,6 +140,8 @@
   width: 230px;
   height: 150px;
   border: 1px solid #cccac8;
+  position: sticky;
+  top: 85px; /* Cố định khoảng cách từ trên xuống */
 }
 .checkout div{
   padding: 10px;

@@ -1,0 +1,20 @@
+<div class="side-menu" [class.open]="isOpen">
+<div class="menu-content">
+    <img src="assets/images/logo-don-chicken.jpg" alt="DON CHICKEN" class="logo">
+    <div class="menu-item">
+      <img src="https://donchicken.vn/pub/static/version1699371716/frontend/Alothemes/pizzaro3/en_US/images/alothemes/turkey.png" alt="Delivery">
+      <p>Delivery</p>
+    </div>
+    <div class="menu-item" id="bot">
+      <img src="https://donchicken.vn/pub/static/version1699371716/frontend/Alothemes/pizzaro3/en_US/images/alothemes/breakfast.png" alt="Set Table">
+      <p>Set Table</p>
+    </div>
+    <button class="top-button" (click)="scrollToTop()">TOP</button>
+  </div>
+</div>
+
+<!-- Nút mở menu -->
+<button class="toggle-button" (click)="toggleMenu()">
+  <span class="arrow">{{ isOpen ? '❮' : '❯' }}</span>
+</button>
+
