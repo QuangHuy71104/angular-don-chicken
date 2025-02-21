@@ -1,0 +1,36 @@
+.outUnderNavbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e9e9e9;
+  margin: 100px 0 30px 0;
+}
+
+.underNavbar{
+  font-size: 14px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  color: #333e48;
+}
+
+.underNavbar i {
+  display: inline-block;
+  transform: scaleX(0.6);
+  color: #d5d5d5;
+  padding-right: 10px;
+}
+
+.underNavbar a {
+  color: #333e48;
+  padding-right: 13px;
+  text-decoration: none;
+}
+.underNavbar a:hover{
+  color: #ff8c00;
+}
+
+.underNavbar p {
+  padding: 0 13px;
+}

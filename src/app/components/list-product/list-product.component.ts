@@ -1,16 +1,25 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, NgModule} from '@angular/core';
+import {ChickenModel} from '../../models/chicken';
+import { DecimalPipe } from '@angular/common';
+import {CartService} from '../../services/cart/cart.service';
+import {RouterLink} from '@angular/router';
+import {MatButton} from '@angular/material/button';
 
 @Component({
   selector: 'app-list-product',
   standalone: true,
-  imports: [],
+  imports: [
+    DecimalPipe,
+    RouterLink,
+    MatButton
+  ],
   templateUrl: './list-product.component.html',
-  styleUrl: './list-product.component.css'
+  styleUrl: './list-product.component.css',
+  providers: [DecimalPipe]
 })
 export class ListProductComponent {
-  @Input() title!: string;
-  @Input() name!: string;
-  @Input() price!: string;
-  @Input() image!: string;
-  @Input() size!: string;
+  @Input() chicken!: ChickenModel;
+
+  constructor(protected cartService: CartService) {
+  }
 }

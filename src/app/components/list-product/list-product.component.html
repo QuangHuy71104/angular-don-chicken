@@ -1,11 +1,12 @@
 <div class="product">
   <div class="image-container">
-  <img src="{{image}}" alt="">
+  <img src="{{chicken.image}}" alt="">
     <span class="badge">NEW</span>
+    <span class="view-detail"><button [routerLink]="['/detail', chicken.id]" mat-stroked-button >View detail</button></span>
   <div class="inProduct">
-    <a href="">{{name}} ({{size}})</a>
-    <p>₫{{price}}</p>
-    <button class="add-to-cart">
+    <a href="">{{chicken.name}} ({{chicken.size}})</a>
+    <p>₫{{chicken.price | number}}</p>
+    <button (click)="cartService.addToCart(chicken)" class="add-to-cart">
       <i class="material-icons">shopping_cart</i> Add to Cart
     </button>
   </div>

@@ -77,8 +77,10 @@
 }
 
 .outMotoBike {
-  padding: 10px 10px 6px;
+  padding: 5px;
   display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .money {
@@ -112,10 +114,6 @@
   display: flex;
   align-items: center;
 }
-
-.money {
-  margin: 11.2px 0 0 0;
-}
 .circle-number{
   width: 22px;
   height: 22px;
@@ -131,3 +129,4 @@
   line-height: 21px;
   text-align: center;
 }
+

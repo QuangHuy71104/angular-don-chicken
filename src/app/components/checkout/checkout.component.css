@@ -1,0 +1,49 @@
+.checkout{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 230px;
+  height: 150px;
+  border: 1px solid #cccac8;
+  position: sticky;
+  top: 85px; /* Cố định khoảng cách từ trên xuống */
+}
+.checkout div{
+  padding: 10px;
+}
+.checkout p{
+  margin: 0;
+}
+.botCheckout{
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+.botCheckout .bold{
+  font-size: 14px;
+  font-weight: bold;
+}
+.topCheckout{
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #e9e9e9;
+}
+.inCheckout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+.inCheckout:hover{
+  background-color: #ff8c00;
+  color: white
+}
+.midCheckout{
+  font-size: 13px;
+  color: #666;
+  border-bottom: 1px solid #e9e9e9;
+}

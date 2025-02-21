@@ -4,25 +4,21 @@
       <img src="https://donchicken.vn/pub/media/logo/stores/2/bd26ca5cbd065f580617.jpg" alt="logo-don-chicken" width="260px" height="71px">
     </div>
     <div class="menuCenter">
-      <div class="menu">
+      <div [routerLink]="['/menu']" class="menu">
         <p>Menu</p>
         <i class="material-icons" style="font-size: 17px">expand_more</i>
       </div>
-      <div class="store">Store</div>
-      <div class="news">
+      <div [routerLink]="['/store']" class="store">Store</div>
+      <div [routerLink]="['/news']" class="news">
         <p>News</p>
         <i class="material-icons" style="font-size: 17px">expand_more</i>
       </div>
-      <div class="franchise">Franchise</div>
-      <div class="aboutUs">About Us</div>
+      <div [routerLink]="['/franchise']" class="franchise">Franchise</div>
+      <div [routerLink]="['/about-us']" class="aboutUs">About Us</div>
     </div>
     <div class="menuRight">
       <div class="outMotoBike">
-        <span class="motoBike">
-          <span class="circle-number">
-            <span class="number">0</span>
-          </span>
-        </span>
+        <mat-icon [matBadge]="cartService.cart.length" matBadgeColor="primary" class="custom-badge">moped</mat-icon>
         <p class="money">₫0</p>
       </div>
       <div class="language">
