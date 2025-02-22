@@ -9,6 +9,10 @@ import {DetailComponent} from './pages/detail/detail.component';
 
 export const routes: Routes = [
   {
+    path: '',
+    component: MenuComponent,
+  },
+  {
     path: 'store',
     component: StoreComponent,
   },

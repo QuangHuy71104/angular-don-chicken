@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {ChickenModel} from '../../models/chicken';
+import { ChickenModel } from '../../models/chicken';
 
 @Injectable({
   providedIn: 'root'
@@ -7,19 +7,18 @@ import {ChickenModel} from '../../models/chicken';
 export class ChickenService {
 
   constructor() { }
+
+  viewDetail(id: string) {
+    const chicken = this.chickens.find(chicken => chicken.id === parseInt(id, 10));
+    return chicken;
+  }
+
   chickens: ChickenModel[] = [
     {
       id: 1,
       image: 'https://donchicken.vn/pub/media/catalog/product/cache/c430e3e26517992a27628ce5995d6769/d/a/dakgangjeong_l_1.jpg',
       name: 'Dakgangjeong Chicken',
       size: 'L',
-      price: 259000
-    },
-    {
-      id: 2,
-      image: 'https://donchicken.vn/pub/media/catalog/product/cache/c430e3e26517992a27628ce5995d6769/d/a/dakgangjeong_l_1.jpg',
-      name: 'Ayam Bakar',
-      size: 'S',
       price: 259000
     },
     {
@@ -57,5 +56,5 @@ export class ChickenService {
       size: 'M',
       price: 219000
     },
-  ]
+  ];
 }

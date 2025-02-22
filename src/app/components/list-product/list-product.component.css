@@ -73,3 +73,6 @@
   font-weight: bold;
   border-radius: 40px;
 }
+.mat-mdc-outlined-button:not(:disabled) {
+  color: white;
+}

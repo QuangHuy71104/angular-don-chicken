@@ -1,12 +1,11 @@
 .footer{
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: black;
   color: white;
   padding: 50px;
-  position: fixed;
-  align-self: flex-end;
 }
 .footerBottom{
   width: 100%;

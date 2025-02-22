@@ -3,10 +3,38 @@
 <app-under-navbar></app-under-navbar>
 <div class="main">
   <app-sidebar></app-sidebar>
-  <div class="center">
-    vbzukxghzojbz.clnfxkb;
+    <div class="row">
+      <div class="view-detail">
+        <img [src]="currentChicken?.image" alt="{{currentChicken?.name}}">
+        <div class="right">
+        <h2>{{currentChicken?.name}} ({{currentChicken?.size}})</h2>
+        <p>{{currentChicken?.price | number}}</p>
+          <div class="field-qty">
+            <label class="label">
+              <span>Quantity</span>
+            </label>
+            <div class="product-add">
+            <div class="product-qty">
+              <div class="custom-qty">
+                <button type="button" class="items" onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) && qty > 1 ) result.value--;return false;">
+                  <i class="fa fa-minus">
+                  </i>
+                </button>
+                <input type="number" name="qty" maxlength="12" value="1" title="Quantity" class="input-text qty" data-validate="{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:1,&quot;maxAllowed&quot;:10000}}">
+                <button type="button" class="increase items" onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
+                  <i class="fa fa-plus">
+                  </i>
+                  </button>
+              </div>
+            </div>
+              <button (click)="cartService.addToCart(chicken)" class="add-to-cart">
+                <i class="material-icons">shopping_cart</i> Add to Cart
+              </button>
+          </div>
+          </div>
+        </div>
       </div>
-  <app-checkout></app-checkout>
-</div>
+    </div>
+  </div>
 <app-button-right></app-button-right>
 <app-footer></app-footer>

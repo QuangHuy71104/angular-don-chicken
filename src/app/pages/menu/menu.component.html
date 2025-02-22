@@ -1,17 +1,13 @@
-<router-outlet></router-outlet>
-<app-navbar></app-navbar>
 <app-under-navbar></app-under-navbar>
 <div class="main">
+  <app-sidebar></app-sidebar>
   <div class="center">
-    <app-sidebar></app-sidebar>
     <p style="margin: 0">NEW MENU</p>
     <div class="outNewMenu">
       @for (chicken of chickens; track $index) {
         <app-list-product [chicken]="chicken"></app-list-product>
       }
     </div>
-    <app-checkout></app-checkout>
   </div>
-  <app-button-right></app-button-right>
-  <app-footer></app-footer>
+  <app-checkout></app-checkout>
 </div>
